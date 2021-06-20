@@ -1,0 +1,23 @@
+package repository;
+
+import static org.junit.Assert.fail;
+
+import org.junit.jupiter.api.Test;
+
+public class RepositoryTest {
+	
+	@Test
+	public void 회원추가기능() {
+		//given
+		Member member = new Member("test");
+		Repository repository = new Repository();
+		
+		//when
+		repository.addMember(member);
+		
+		//then
+		if (repository.findMemberById(member.getId()) != member) {
+			fail("멤버가 다르네요.");
+		}
+	}
+}

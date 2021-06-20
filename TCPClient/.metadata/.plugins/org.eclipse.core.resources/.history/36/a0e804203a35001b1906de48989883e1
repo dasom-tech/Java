@@ -1,0 +1,6 @@
+package network;
+
+// recv
+public class ReadThread extends Thread {
+
+}

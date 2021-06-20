@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;main.WindowTest&apos; to &apos;FrameOne&apos;&#x0D;&#x0A;- Original project: &apos;AwtSample07&apos;&#x0D;&#x0A;- Original element: &apos;main.WindowTest&apos;&#x0D;&#x0A;- Renamed element: &apos;main.FrameOne&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;WindowTest&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;main{WindowTest.java[WindowTest" matchStrategy="1" name="FrameOne" qualified="false" references="true" similarDeclarations="false" stamp="1606705179714" textual="false" version="1.0"/>
+</session>

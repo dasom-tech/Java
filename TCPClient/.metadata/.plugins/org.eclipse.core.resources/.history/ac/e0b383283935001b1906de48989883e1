@@ -1,0 +1,43 @@
+package network;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.net.Socket;
+
+import view.ClientFrame;
+
+// send 
+public class WriteClass {
+	
+	Socket socket;
+	ClientFrame cf;
+	
+	String id;
+	String msg;
+
+	public WriteClass(ClientFrame cf) {
+		this.cf = cf;
+		this.socket = cf.socket;
+	}
+	
+	public void sendMessage() {
+		
+		try {
+			PrintWriter pw = new PrintWriter(socket.getOutputStream(), true);
+			
+			//첫 번째 전송 -> 대화명
+			
+			// 그 다음부터 전송 -> 채팅메세지
+		
+		
+		
+		
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}//true는 추가 기입했을때를 위해
+		
+		
+		
+	}
+}

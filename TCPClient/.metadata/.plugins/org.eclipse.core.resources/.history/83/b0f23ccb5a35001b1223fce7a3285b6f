@@ -1,0 +1,42 @@
+package network;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.Socket;
+
+import view.ClientFrame;
+import view.Id;
+
+// receive
+public class ReadThread extends Thread {
+	
+	Socket socket;
+	ClientFrame cf;
+	
+	public ReadThread(Socket socket, ClientFrame cf) {	// ReadThread로 Socket과 ClientFrame을 모두 접근시켜주기 위해서?
+		this.socket = socket;
+		this.cf = cf;
+	}
+
+	@Override
+	public void run() {
+		BufferedReader br;
+		try {
+			
+			while(true) {
+				br = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+				String str = br.readLine();
+				if(str == null) {
+					System.out.println("접속 끊김");
+				}
+				cf.textA.append(str + "\n");
+				
+				Thread.sleep(300);
+			}
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}

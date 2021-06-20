@@ -1,0 +1,57 @@
+package quiz;
+
+public class B01_whileQuiz {
+
+	public static void main(String[] args) {
+		
+		// while문을 이용하여
+		
+		// 1. 200부터 37까지 출력해보세요
+		
+		// 2. 1부터 1386까지 중 7의 배수를 모두 출력해보세요
+		//    (가로로 출력하되, 5개 출력할 때마다 줄바꾸기, 줄 맞출 것)
+		// 3. (1) + (1 +2) + (1 + 2 + 3) + ...(1 + 2 + ... + 10)의 결과를 구해보세요
+		
+		int i = 200;
+		while (i > 36) {
+			System.out.print(i-- + " ");
+		}
+		System.out.println();
+		
+		int i2 = 1;
+		while (i2 < 1387) {
+			if(i2 % 7 == 0) {
+			  System.out.print(i2 + " \t ");
+			  if(i2 % 35 == 0)
+				  System.out.println();
+		    }
+			++i2;
+		}
+		System.out.println();
+		
+		int i3 = 1;
+		int sum = 0;
+		int sum2 = 0;	
+		while (i3 < 11) {
+			sum += i3++;
+			sum2 += sum;
+		}
+		System.out.println(sum2);
+		
+		i3 = 1;
+		
+		while (i3 < 11) {
+			//System.out.println(i3);
+			
+			int i4 =1;
+			while (i4 <= i3) {
+			   System.out.println(i4 + " ");
+			++i4;
+		}
+			System.out.println();
+			
+			++i3;
+		}
+		
+	}
+}

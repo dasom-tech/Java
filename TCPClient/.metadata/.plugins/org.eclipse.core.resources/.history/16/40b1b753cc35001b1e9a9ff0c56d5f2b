@@ -1,0 +1,57 @@
+package network;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.net.InetAddress;
+import java.net.Socket;
+
+import view.ClientFrame;
+import view.Id;
+
+// send 
+public class WriteClass {
+	
+	Socket socket;
+	ClientFrame cf;
+	
+	String id;
+	String msg;
+
+	public WriteClass(ClientFrame cf) {
+		this.cf = cf;
+		this.socket = cf.socket;
+	}
+	
+	public void sendMessage() {
+		
+		try {
+			PrintWriter pw = new PrintWriter(socket.getOutputStream(), true);//true는 추가 기입했을때를 위해
+			
+			//첫 번째 전송 -> 대화명
+			if(cf.isFirst == true) {
+				// 서버 주소 취득
+				InetAddress iaddr = socket.getLocalAddress();
+				String ip = iaddr.getHostAddress();	// xxx.xxx.xxx.xxx
+				id = Id.textF.getText();			// Id클래스에서 대화명 취득
+				
+				msg = "[" + id + "]님 로그인(" + ip + ")";
+				//		[길동]192.34.5.12
+				
+				cf.setTitle("접속자:" + id);
+			
+			}
+			
+			// 그 다음부터 전송 -> 채팅메세지
+			else {
+				msg = "[" + id + "]" + cf.textF.getText();
+			}
+			pw.println(msg);
+			pw.flush();	
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+	}
+}
+				

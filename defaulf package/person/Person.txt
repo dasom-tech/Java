@@ -1,0 +1,46 @@
+package myobj.person;
+
+public class Person {
+
+	// public : 다른 패키지에서 접근할 수 있는 자원임을 알린다
+	public String name;
+	public int age;
+	
+	public Person() {}
+	
+	public Person(String name, int age) {
+		this.name = name;
+		this.age = age;
+	}
+	
+	public void introduce() {
+		System.out.printf("안녕하세요! 제 이름은 %s이고 나이는 %d입니다.\n", 
+				name, age);
+	}
+	
+	public void attack() {
+		System.out.printf("'%s'가 주먹질로 공격합니다. 데미지가 약합니다.\n", name);
+	}
+	
+}
+
+/*
+ * 	Person클래스를 상속받은 다른 직업 클래스를 생성해보세요
+ * 
+ * 		1. Programmer
+ * 		2. FireFighter
+ * 
+ * 	※ 오버라이드, 새로운 메서드가 있어야 함
+ * 
+ * */
+
+
+
+
+
+
+
+
+
+
+

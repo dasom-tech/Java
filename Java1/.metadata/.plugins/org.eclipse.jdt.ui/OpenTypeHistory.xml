@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=OOP4/src&lt;pcls{ParentsClass.java[ParentsClass" modifiers="1" timestamp="1606131344806"/>
+<typeInfo handle="=OverRide/src&lt;parents{ParentsClass.java[ParentsClass" modifiers="1" timestamp="1605578325021"/>
+<typeInfo handle="=OverRide1/src&lt;parents{Parents.java[Parents" modifiers="1" timestamp="1605581093565"/>
+<typeInfo handle="=work07/src&lt;cls{Parent.java[Parent" modifiers="0" timestamp="1605591880028"/>
+<typeInfo handle="=abstractClass2/src&lt;Write{Writer.java[Writer" modifiers="1025" timestamp="1605834440943"/>
+<typeInfo handle="=InterfaceSample/C:\/Program Files\/Java\/jre1.8.0_271\/lib\/rt.jar=/javadoc_location=/https:\/\/docs.oracle.com\/javase\/8\/docs\/api\/=/&lt;java.nio.channels(WritableByteChannel.class[WritableByteChannel" modifiers="1537" timestamp="1604289809010"/>
+<typeInfo handle="=InterfaceSample/src&lt;inter{WriteMode.java[WriteMode" modifiers="513" timestamp="1605837786725"/>
+<typeInfo handle="=FactoryPattern/src&lt;animal{Animal.java[Animal" modifiers="513" timestamp="1606351573638"/>
+<typeInfo handle="=AwtSample02/C:\/Program Files\/Java\/jre1.8.0_271\/lib\/rt.jar=/javadoc_location=/https:\/\/docs.oracle.com\/javase\/8\/docs\/api\/=/&lt;javax.swing(WindowConstants.class[WindowConstants" modifiers="1537" timestamp="1604289809010"/>
+<typeInfo handle="=AwtSample02/C:\/Program Files\/Java\/jre1.8.0_271\/lib\/rt.jar=/javadoc_location=/https:\/\/docs.oracle.com\/javase\/8\/docs\/api\/=/&lt;java.awt(Frame.class[Frame" modifiers="33" timestamp="1604289809010"/>
+<typeInfo handle="=AwtSample02/C:\/Program Files\/Java\/jre1.8.0_271\/lib\/rt.jar=/javadoc_location=/https:\/\/docs.oracle.com\/javase\/8\/docs\/api\/=/&lt;java.awt.event(WindowListener.class[WindowListener" modifiers="1537" timestamp="1604289809010"/>
+<typeInfo handle="=BaseballMemberUI/C:\/Program Files\/Java\/jre1.8.0_271\/lib\/rt.jar=/javadoc_location=/https:\/\/docs.oracle.com\/javase\/8\/docs\/api\/=/&lt;javax.swing(JPanel.class[JPanel" modifiers="33" timestamp="1604289809010"/>
+<typeInfo handle="=AwtSample04/C:\/Program Files\/Java\/jre1.8.0_271\/lib\/rt.jar=/javadoc_location=/https:\/\/docs.oracle.com\/javase\/8\/docs\/api\/=/&lt;javax.swing(JFrame.class[JFrame" modifiers="33" timestamp="1604289809010"/>
+<typeInfo handle="=AwtSample05/C:\/Program Files\/Java\/jre1.8.0_271\/lib\/rt.jar=/javadoc_location=/https:\/\/docs.oracle.com\/javase\/8\/docs\/api\/=/&lt;java.awt.event(ActionListener.class[ActionListener" modifiers="1537" timestamp="1604289809010"/>
+<typeInfo handle="=Observer/C:\/Program Files\/Java\/jre1.8.0_271\/lib\/rt.jar=/javadoc_location=/https:\/\/docs.oracle.com\/javase\/8\/docs\/api\/=/&lt;java.util(Observable.class[Observable" modifiers="33" timestamp="1604289809010"/>
+</typeInfoHistroy>

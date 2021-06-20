@@ -1,0 +1,17 @@
+package myobj.person;
+
+public class FireFighter extends Person {
+
+	public FireFighter() {}
+	
+	public FireFighter(String name, int age) {
+		super(name, age);		
+	}
+
+	@Override
+	public void attack() {
+		System.out.println("고무 호스로 때렸습니다.");
+	}
+	
+}
+

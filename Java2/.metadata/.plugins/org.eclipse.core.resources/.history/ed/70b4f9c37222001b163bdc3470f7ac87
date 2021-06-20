@@ -1,0 +1,60 @@
+package StudentClass;
+
+import java.util.Scanner;
+
+public class mainClass {
+
+	public static void main(String[] args) {
+		
+		/*
+		     성적 관리 프로그램
+		     
+		  1. 몇 명의 학생의 통계?
+		  2. 이름 / 국어 / 수학 / 영어 점수 입력받기(잘 못 입력시 다시 입력)
+		  3. 각 학생들의 총점
+		  4. 총점의 1등?
+		  5. 과목의 1등?
+		  6. 과목의 꼴등?
+		  7. 총점의 평균
+		  8. 이름을 입력하면, 그 학생의 성적 출력
+		  
+		 */
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("몇 명의 학생을 비교하시겠습니까?>>> ");
+		int count = sc.nextInt();
+		String student[][] = new String[count][4] ;
+		
+		for (int i = 0; i < student.length; i++) {
+			for (int j = 0; j < student[i].length; j++) {
+				if(j == 0) {
+					System.out.println("이름을 입력하세요>>> ");
+					String name = sc.next();
+					student[i][j] = name;
+				}else if(j == 1) {
+					System.out.println("국어 점수를 입력하세요>>> ");
+					String kor = sc.next();
+					student[i][j] = kor;
+				}else if(j == 2) {
+					System.out.println("수학 점수를 입력하세요>>> ");
+					String math = sc.next();
+					student[i][j] = math;
+				}else {
+					System.out.println("영어 점수를 입력하세요>>> ");
+					String eng = sc.next();
+					student[i][j] = eng;
+				}
+			}
+
+		}
+		for (int i = 0; i < student.length; i++) {
+			for (int j = 0; j < student[i].length; j++) {
+				System.out.print(student[i][j] + ",");
+			}
+			System.out.println();
+		}		
+
+	}
+
+}

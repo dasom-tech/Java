@@ -1,0 +1,15 @@
+package main;
+
+public class mainClass {
+
+	public static void main(String[] args) {
+		
+		Thread thread1 = new Thread("퐁");
+		
+		thread1.start();
+		
+		System.out.println("프로그램 종료");
+
+	}
+
+}

@@ -1,0 +1,23 @@
+package myobj.person;
+
+public class Programmer extends Person {
+
+	public Programmer() {}
+	
+	public Programmer(String name, int age) {
+		super(name, age);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public void attack() {
+		System.out.println("키보드로 때렸습니다.");
+	}
+	
+	public void doProject(Project project) {		
+		project.progress += 5;		
+	}
+	
+}
+
+

@@ -1,0 +1,40 @@
+package dao;
+
+import java.util.Scanner;
+
+public class MemberDaoImpl implements MemberDao {
+	
+	Scanner sc = new Scanner(System.in);
+	
+	public MemberDaoImpl() {
+	}
+	
+	public void insert() {
+		
+	}
+	
+	public void delete() {
+		
+	}
+	
+	public void select() {
+		
+	}
+	
+	public void update() {
+		
+	}
+	
+	public void allprint() {
+		
+	}
+	
+	public void dataSave() {
+		
+	}
+	
+	public void dataLoad() {
+		
+	}
+
+}

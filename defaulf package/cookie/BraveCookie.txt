@@ -1,0 +1,13 @@
+package myobj.cookie;
+
+public class BraveCookie extends Cookie {
+	
+	public BraveCookie() {
+		super("용감한 쿠키");
+	}
+	
+	public void special() {
+		System.out.println("용감함");
+	}
+
+}

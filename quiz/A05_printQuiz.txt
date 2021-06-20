@@ -1,0 +1,52 @@
+package quiz;
+
+public class A05_printQuiz {
+	public static void main(String[] args) {
+		System.out.println("================출력 결과================");
+		System.out.println();
+		System.out.println("이름 : 이다솜");
+		
+		int age = 32;
+		System.out.print("나이 : ");
+		System.out.println(age);
+		System.out.printf("Tel: %s\n","010-4955-2099");
+		System.out.printf("키    : %.1f\n", 155.10);
+		System.out.printf("몸무게         : %d\n", 50);
+		System.out.printf("혈액형         : %c\n", 'A');
+		System.out.printf("취미            : %s\n", "마크라메만들기" );
+		System.out.printf("좋아하는 것  : %s\n", "캠핑");
+		
+		// 숫자 앞에 0을 붙이면 8진수
+		// 숫자 앞에 0x를 붙이면 16진수
+		// String tel = String.format("%03d-%d-%d", 10, 1234,1234);
+		// String tel = 010-1234-1234;
+		// System.out.println(tel);
+		
+		// String banner = "=============출력 결과==============="
+		// String name = "홍길동";
+		// int age = 20;
+		// String tel = "010-1234-1234"
+		// double tall = 155.1;
+		
+		// 몸무게는 소수점이 나올 수도 있기 때문에 double을 써야 한다
+		// double weight = 50;
+		
+		// 혈액형은 AB형도 저장해야 하기 때문에 문자열을 써야한다
+		// String bloodType = "AB"
+		
+		// boolean goonpil = false;
+		// boolean gisa = false;
+		// boolean gf = false;
+		
+		// System.out.println(banner);
+		// System.out.println("이름\t: " + name);
+		// System.out.println("나이\t: " + age);
+		// System.out.println("Tel\t: " + tel);
+		// System.out.println("키\t: " + tall);
+		// System.out.println("몸무게\t: " + weight);
+		// System.out.println("혈액형\t: " + bloodType);
+		// System.out.println("군필\t: " + goonpil);
+		// System.out.println("자격증\t: " + gisa);
+		// System.out.println("여자친구\t: " + gf);
+	}
+}

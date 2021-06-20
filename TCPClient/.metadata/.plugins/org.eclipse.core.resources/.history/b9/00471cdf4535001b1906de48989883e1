@@ -1,0 +1,22 @@
+package main;
+
+import java.net.Socket;
+
+import network.ReadThread;
+import view.ClientFrame;
+import view.Id;
+
+public class mainClass {
+
+	public static void main(String[] args) throws Exception{
+		
+		Socket socket = new Socket("192.168.0.130", 9000); //127.0.0.1은 자기 자신 접속하는 ip주소
+		System.out.println("Server Connection Success!!");
+		
+		ClientFrame cf = new ClientFrame(socket);
+		
+		new ReadThread(socket, cf).start();
+	
+	}
+
+}

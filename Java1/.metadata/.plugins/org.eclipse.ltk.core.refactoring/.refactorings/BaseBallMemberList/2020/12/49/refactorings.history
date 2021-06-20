@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;file&apos; to &apos;BaseballMemberUI/src&apos;&#x0D;&#x0A;- Original project: &apos;BaseballMemberList&apos;&#x0D;&#x0A;- Destination element: &apos;BaseballMemberUI/src&apos;&#x0D;&#x0A;- Original element: &apos;BaseballMemberList/src/file&apos;" description="Copy package" destination="=BaseballMemberUI/src" element1="/src&lt;file" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1606783655138" version="1.0"/>
+</session>

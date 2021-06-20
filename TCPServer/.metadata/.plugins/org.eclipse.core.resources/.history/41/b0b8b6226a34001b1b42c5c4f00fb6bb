@@ -1,0 +1,51 @@
+package Thread;
+
+import java.awt.List;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
+import java.net.Socket;
+
+public class ServerThread extends Thread{
+	
+	Socket clientSocket;
+	List<Socket> list;
+	
+	public ServerThread(Socket clientSocket, List<Socket> list) {
+		this.clientSocket = clientSocket;
+		this.list = list;
+	}
+
+	@Override
+	public void run() {
+		super.run();
+
+		try {
+
+			while(true) {
+				// 수신
+				BufferedReader br = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
+				String msg;
+				msg = br.readLine();
+				System.out.println("클라이언트로부터 받은 메세지:" + msg);			
+
+
+				// 전송
+				for (int i = 0; i < list.size(); i++) {
+					Socket s = list.get(i);
+					if(s != clientSocket) {
+						PrintWriter pw = new PrintWriter(s.getOutputStream());
+						pw.println(msg);	//실질적으로 전송되는 부분
+						pw.flush();
+					}
+				}
+				
+				Thread.sleep(500);
+			}
+		} catch (IOException e) {
+			System.out.println(e.getMessage());
+		}	
+
+	}
+}

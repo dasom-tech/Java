@@ -1,0 +1,29 @@
+package quiz;
+
+import java.util.Scanner;
+
+public class A07_Calc {
+	
+	// (1) 사용자로부터 정수를 두 개 입력받고 
+	//     두 숫자의+, -, *, /, %의 결과를 출력해보세요
+
+	// (2) 사용자로부터 실수를 두 개 입력받고
+	//     두 실수의+, -, *, /, %의 결과를 출력해보세요
+	
+	public static void main(String[] args) {
+	
+		Scanner sc = new Scanner(System.in);
+		
+		int int_a, int_b;
+		
+		System.out.print("정수 두 개를 입력해주세요 >>> ");
+		int_a = sc.nextInt();
+		int_b = sc.nextInt();
+		
+		int plus_result = int_a + int_b;
+		int minus_result = int_a - int_b;
+		
+		System.out.println(plus_result);
+		System.out.println(minus_result);
+	}
+}

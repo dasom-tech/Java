@@ -1,0 +1,44 @@
+package main;
+
+public class mainClass {
+	public static void main(String[] args) {
+		/*
+		 	TCP : Transmission Control Protocol
+		 			전송			제어		통신규약
+		 			
+		 	TCP server
+			 	Web server(Tomcat)
+			 	DB  server
+			 	
+			종단 System : 			host
+					PC, Printer, Smart phone, Scanner
+					
+			Router -  hardware
+					host들 간에 상호 데이터를 교환할 수 있도록 하는 기기
+					
+			inter Network	포괄적인 통신망
+			
+			Protocol - 통신규약
+			TCP : 신사적인 프로토콜
+				    연결형
+				    전화 ---> 상대방 통신 시작
+				    데이터의 경계가 없다. 전송 데이터 크기가 한정되어 있지 않다.
+				  1 대 1 통신	unicast
+				    채팅
+				  
+			UDP : User Datagram Protocol
+				    비 연결형
+				    편지 ---> 받았는지 확인 x
+				    지상파 방송
+				    데이터의 경계가 있다.
+				  1 대 1		unicast
+				  1대 다		broadcast
+				    다 대 다		multicast
+		 
+		 
+		 */
+		
+	}
+	
+}
+

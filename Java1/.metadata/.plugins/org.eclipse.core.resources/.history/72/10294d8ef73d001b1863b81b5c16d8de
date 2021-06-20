@@ -1,0 +1,24 @@
+package repository;
+
+import static org.junit.Assert.fail;
+
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+import static org.assertj.core.api.Assertions.*;
+
+public class RepositoryTest {
+	
+	@Test
+	public void 회원추가기능() {
+		//given
+		Member member = new Member("test");
+		Member member2 = new Member("test2");
+		Repository repository = new Repository();
+		
+		//when
+		repository.addMember(member);
+		
+		//then
+		assertThat(repository.findMemberById(member.getId())).isSameAs(member2);
+	}
+}

@@ -1,0 +1,39 @@
+
+import java.util.Scanner;
+
+public class A13_forQuiz {
+
+	public static void main(String[] args) {
+		
+		// 사용자가 숫자를 입력하면
+		// 1. 1부터 입력한 숫자 중 3의 배수의 총합을 구해보세요
+		// 2. 1부터 입력한 숫자 중 7의 배수가 몇 개 있는지 구해보세요
+		// 3. 1부터 입력한 숫자 중 2 또는 3의 배수가 아닌 수들의 총합을 구해보세요
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.print("숫자 입력 : ");
+		
+		int input = sc.nextInt();
+		
+		int sum3 = 0;
+		int sum23 = 0;
+		int count7 =0;
+		
+		for (int num = 1; num <= input; ++num) {
+						
+			// ※ 총합(sum)을 구할때는 값을 누적시키고, 개수(count)를 구할때는 1씩 증가시킨다
+			if (num % 3 == 0);
+			    sum3 += num;
+			    
+			if (num % 7 == 0);
+			    count7 += 1;
+			    
+			if ( !(num % 2 == 0 || num % 3 == 0));
+			   sum23 += num;
+		}
+		
+		System.out.printf("1부터 %d까지의 숫자 중\n" + "3의 배수의 총합 : %d\n" + "7의 배수의 개수 : %d\n" + "2 또는 3의 배수가 아닌 수의 총합 : %d\n", input, sum3,count7,sum23);
+				
+		
+	}
+}

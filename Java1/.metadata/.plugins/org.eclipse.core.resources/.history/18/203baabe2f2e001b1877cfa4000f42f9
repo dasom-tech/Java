@@ -1,0 +1,49 @@
+package dao;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+import dto.Human;
+
+public class MemberDaoImpl implements MemberDao {
+	
+	Scanner sc = new Scanner(System.in);
+	
+	private List<Human> list = null;
+	
+	private int memberNumber;	//1 2 3 4 5 ~	1000, 2000
+	
+	public MemberDaoImpl() {
+		list = new ArrayList<Human>();
+	}
+	
+	public void insert() {
+		
+	}
+	
+	public void delete() {
+		
+	}
+	
+	public void select() {
+		
+	}
+	
+	public void update() {
+		
+	}
+	
+	public void allprint() {
+		
+	}
+	
+	public void dataSave() {
+		
+	}
+	
+	public void dataLoad() {
+		
+	}
+
+}

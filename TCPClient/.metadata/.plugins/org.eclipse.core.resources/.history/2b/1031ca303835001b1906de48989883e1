@@ -1,0 +1,10 @@
+package network;
+
+import view.ClientFrame;
+
+// send 
+public class WriteClass {
+
+	public WriteClass(ClientFrame cf) {
+	}
+}

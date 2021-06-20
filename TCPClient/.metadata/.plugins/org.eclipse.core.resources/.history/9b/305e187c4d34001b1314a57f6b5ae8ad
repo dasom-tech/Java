@@ -1,0 +1,48 @@
+package main;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.net.InetAddress;
+import java.net.InetSocketAddress;
+import java.net.Socket;
+
+public class mainClass {
+
+	public static void main(String[] args) {
+		/*
+		 	1. 접속을 해야 할 Server의 주소를 설정해줄 Socket 1개 필요
+		 	2. 소켓 생성
+		 	3. 접속
+		 	4. 데이터 송수신	 
+		 */
+		
+		// 서버 주소 설정
+		InetSocketAddress sockAddr = new InetSocketAddress("192.168.0.130", 9000);
+		
+		// 소켓 생성
+		Socket socket = new Socket();
+		
+		// 접속
+		try {
+			socket.connect(sockAddr, 5000);// 접속 안될 때 5초동안 대기
+			
+			InetAddress inetAddr;
+			if((inetAddr = socket.getInetAddress()) != null) {
+				System.out.println("server 접속 성공! :" + inetAddr);
+			}else {
+				System.out.println("server 연결 실패~");
+			}
+			
+			String msg = "안녕하세요";
+			
+			// send
+			PrintWriter pw = new PrintWriter(socket.getOutputStream());
+			pw.println(msg);	//실질적으로 전송되는 부분
+			pw.flush();
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+}

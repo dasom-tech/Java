@@ -1,0 +1,68 @@
+package quiz;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+public class D05_JiphapQuiz {
+	
+	// 1. 두 컬렉션의 합집합을 구하는 함수를 정의해보세요
+	private Set<String> union(Collection<String> A, Collection<String> B) {
+		
+		// 합집합을 저장해 둘 Set을 미리 하나 생성해둔다
+		Set<String> union = new HashSet<>();
+		
+		// 매개변수로 전달받은 두 컬렉션을 Set에 추가한 후 리턴
+		union.addAll(A);
+		union.addAll(B);
+		
+		
+		return union;
+	}
+	
+	// 2. 두 컬렉션의 교집합을 구하는 함수를 정의해보세요
+	private Set<String> inter(Collection<String> A, Collection<String> B){
+		Set<String> inter = new HashSet<>();
+		
+		inter.addAll(A);
+		inter.retainAll(B);
+		
+		return inter;
+	}
+	 
+	// 3. 두 컬렉션의 차집합을 구하는 함수를 정의해보세요
+	private Set<String> cha(Collection<String> A, Collection<String> B){
+		Set<String> cha = new HashSet<>();
+		
+		cha.addAll(A);
+		cha.removeAll(B);
+		
+		return cha;
+	}
+	
+	public static void main(String[] args) {
+		
+		D05_JiphapQuiz instance = new D05_JiphapQuiz();
+		
+		List<String> A = new ArrayList<>();
+		A.add("치킨");
+		A.add("김밥");
+		A.add("떡볶이");
+		
+		List<String> B = new ArrayList<>();
+		B.add("김밥");
+		B.add("순대");
+		B.add("곱창");
+
+		System.out.println("A: " + A);
+		System.out.println("B: " + B);
+		
+		System.out.println("A 합 B: " + instance.union(A, B));
+		System.out.println("A 교 B: " + instance.inter(A, B));
+		System.out.println("A - B: " + instance.cha(A, B));
+		System.out.println("B - A: " + instance.cha(B, A));
+	}
+
+}

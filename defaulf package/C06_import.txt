@@ -1,0 +1,36 @@
+
+// 현재 이 .java파일이 위치한 패키지 : default (딱히 분류하지 않은 곳)
+// 가져다 쓰고 싶은 패키지가 다른 패키지에 있다면 반드시 import를 사용해야 한다
+
+import myobj.Apple;
+
+// 패키지 내부에 패키지가 있는 경우
+import myobj.vehicle.Subway; // 대소문자 구분을 제대로 하지 않으면 패키지와 클래스가 헷갈림
+import myobj.vehicle.Bus;
+
+// *를 사용하면 해당 패키지 내부의 모든 클래스를 import하게 된다
+// import myobj.vehicle.*;
+
+public class C06_import {
+	
+	// ※패키지와 import를 이용하면 우리가 열심히 만든 클래스들을 깔끔하게 분류하고 가져다 사용할 수 있다
+	
+	public static void main(String[] args) {
+		
+		// 소스를 객체별로 분할하여 사용할 수 있기 때문에
+		// 여러 프로그래머들이 함께 작업할 때 유용하다
+		
+		// ※ 하나의 파일을 여러 프로그래머가 건드리는 것은 좋지 않다 (충돌이 발생한다)
+		Subway sub01 = new Subway();
+		Bus bus01 = new Bus();
+		
+		Apple apple01 = new Apple();
+		
+		// 다른 패키지의 자원은 public이 붙은 자원에만 접근할 수 있다
+		apple01.color = 1;
+		apple01.size = 2;
+		apple01.grade = 3;
+		apple01.sweet = 4;
+		
+	}
+}

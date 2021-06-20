@@ -1,0 +1,47 @@
+package quiz;
+
+// 자동 import 단축키 : Ctrl + Shift + O
+import java.util.Scanner;
+
+public class A10_appleQuiz {
+	
+	public static void main(String[] args) {
+		
+		// 사과를 10개씩 담을 수 있는 바구니가 있다.
+		// 사과의 개수를 입력 받으면 필요한 바구니의 개수를 계산하여
+		// 출력해주는 프로그램을 작성해보세요.
+		
+		
+		int basket_size = 10;
+		
+		System.out.print("사과의 개수 : ");
+		int apple = new Scanner(System.in).nextInt();
+		
+		if (apple <0) {
+			System.out.println("잘못된 개수 입니다. 프로그램을 종료합니다.");System.exit(0); //프로그램 강제 종료
+			//프로그램 강제 종료 -> else문 아닌 if문으로
+		}
+		
+		int basket_count = apple / basket_size;
+		if (apple %10 !=0 ) {
+			System.out.println("바구니의 개수 :" + (basket_count+1));
+		}else{
+			System.out.println("바구니의 개수 :" + basket_count);
+		}
+		
+		// 사과의 개수가 10으로 나누어 떨어지면 나누기만 하면 되고
+		// 나누어 떨어지지 않을땐 바구니가 한 개 더 필요하다
+		// int basket_count;
+		
+		// if (apple_count % 10>0){
+		//    basket_count = apple_count / basket_size +1;
+		//} else{
+		//    basket_count = apple_count / basket_size; 
+		//}
+		
+		// System.out.printf("필요한 바구니의 개수는 %d개 입니다.\n", basket_count);
+		
+		
+	}
+
+}
